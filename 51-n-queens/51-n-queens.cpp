@@ -20,7 +20,7 @@ public:
 }
     
 void help(vector<string>c,vector<vector<string>>&s , int row) {
-    if(c.size()==0);
+    if(c.size()==0)return;
   if(row==c.size()){
     s.push_back(c);
       return;
