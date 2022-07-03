@@ -24,7 +24,7 @@ public:
         while(i< nums.size() and nums[i] - nums[i-1]==0)i++;
         if(i >=nums.size())return 1;
             one = 1 + help(nums,nums.size(),i,(nums[i]-nums[i-1] > 0));
-        int two = help(nums,nums.size(),i,0);
-        return max(one,two) + 1;
+        // int two = help(nums,nums.size(),i,0);
+        return one + 1;
     }
 };
